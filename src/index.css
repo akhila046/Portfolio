@@ -820,10 +820,6 @@ section {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
   .hero-content h1 {
     font-size: 36px;
   }
