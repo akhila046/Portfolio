@@ -18,8 +18,22 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert(`Thank you ${formData.name}! Your message has been sent successfully.`)
-    setFormData({ name: '', email: '', subject: '', message: '' })
+
+    // Create form data for Netlify
+    const formData = new FormData(e.target)
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    })
+      .then(() => {
+        alert(`Thank you ${formData.get('name')}! Your message has been sent successfully. I'll get back to you soon!`)
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      })
+      .catch((error) => {
+        alert('Sorry, there was an error sending your message. Please try again or email me directly.')
+      })
   }
 
   return (
@@ -71,7 +85,8 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <input
             type="text"
             name="name"
