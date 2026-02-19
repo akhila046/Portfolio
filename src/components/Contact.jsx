@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,15 +27,15 @@ const Contact = () => {
       <h2 className="section-title">
         Get In <span className="gradient-text">Touch</span>
       </h2>
-      
+
       <div className="contact-container">
         <div className="contact-info">
           <h3>Let's work together!</h3>
           <p>
-            I'm always open to discussing new projects, creative ideas, or 
+            I'm always open to discussing new projects, creative ideas, or
             opportunities to be part of your vision.
           </p>
-          
+
           <div className="contact-details">
             <div className="contact-item">
               <div className="contact-item-icon">
@@ -46,28 +46,18 @@ const Contact = () => {
                 <p>akhilaohmkumar@gmail.com</p>
               </div>
             </div>
-            
-            <div className="contact-item">
-              <div className="contact-item-icon">
-                <FaPhone />
-              </div>
-              <div>
-                <h4>Phone</h4>
-                <p>+91 7414930126</p>
-              </div>
-            </div>
-            
+
             <div className="contact-item">
               <div className="contact-item-icon">
                 <FaMapMarkerAlt />
               </div>
               <div>
-                <h4>Pune</h4>
-                <p>India</p>
+                <h4>Location</h4>
+                <p>Pune, India</p>
               </div>
             </div>
           </div>
-          
+
           <div className="social-links">
             <a href="https://github.com/akhila046" className="social-icon" target="_blank" rel="noopener noreferrer">
               <FaGithub />
@@ -78,12 +68,9 @@ const Contact = () => {
             <a href="https://x.com/ByteWithAkhila" className="social-icon" target="_blank" rel="noopener noreferrer">
               <FaTwitter />
             </a>
-            <a href="https://www.instagram.com/_akhila25_/" className="social-icon" target="_blank" rel="noopener noreferrer">
-              <FaInstagram />
-            </a>
           </div>
         </div>
-        
+
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"
