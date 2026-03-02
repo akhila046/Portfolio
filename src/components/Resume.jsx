@@ -66,7 +66,7 @@ const Resume = () => {
           Download Resume
         </h3>
         <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="/Akhila_Ohmkumar_Resume_sdenew.pdf" className="btn" download>
+          <a href="/Akhila_Ohmkumar_Resume_SDE.pdf" className="btn" download>
             <FaFilePdf /> Software Engineer Resume
           </a>
           <a href="/Akhila_Ohmkumar_Data_Analyst_Resume.pdf" className="btn" download>
