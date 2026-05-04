@@ -49,6 +49,22 @@ const Projects = () => {
       image: '/logos/web camera.png',
       liveLink: 'https://akhila046.github.io/WebCamera/',
       githubLink: 'https://github.com/akhila046/WebCamera'
+    },
+    {
+      title: 'Task Manager',
+      description: 'Full-stack Task Manager app with Spring Boot REST APIs and React.js frontend. Supports CRUD operations, task filtering, status toggling, and a live stats dashboard.',
+      tags: ['React.js', 'Spring Boot', 'Java', 'MySQL', 'REST API'],
+      image: '/logos/task manager.png',
+      liveLink: '#',
+      githubLink: 'https://github.com/akhila046/task-manager'
+    },
+    {
+      title: 'DSA Kids Game',
+      description: 'Interactive game-based learning platform for DSA concepts including Arrays, Stacks, Queues, Trees, and Graphs with quizzes, badges, and a leaderboard.',
+      tags: ['React.js', 'Vite', 'Framer Motion', 'Firebase', 'CSS'],
+      image: '/logos/dsa kids game.png',
+      liveLink: 'https://akhila046.github.io/DSA-KIDS-GAME/',
+      githubLink: 'https://github.com/akhila046/DSA-KIDS-GAME'
     }
   ]
 

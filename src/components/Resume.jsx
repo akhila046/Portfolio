@@ -70,7 +70,7 @@ const Resume = () => {
             <FaFilePdf /> Software Engineer Resume
           </a>
           <a href="/Akhila_Ohmkumar_Data_Analyst_Resume.pdf" className="btn" download>
-            <FaFilePdf /> Data Analysis Resume
+            <FaFilePdf /> Data Analyst Resume
           </a>
         </div>
       </div>
