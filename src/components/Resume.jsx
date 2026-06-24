@@ -69,7 +69,7 @@ const Resume = () => {
           <a href="/Akhila_Ohmkumar_SDE_Resume.pdf" className="btn" download>
             <FaFilePdf /> Software Engineer Resume
           </a>
-          <a href="/Akhila_Ohmkumar_Data_Analyst_Resume.pdf" className="btn" download>
+          <a href="/Akhila_ohmkumar_DataAnalyst_Resume.pdf" className="btn" download>
             <FaFilePdf /> Data Analyst Resume
           </a>
         </div>
